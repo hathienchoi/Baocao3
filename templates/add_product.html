@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm sản phẩm</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .add-product-container {
+            width: 300px;
+            text-align: center;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="add-product-container">
+        <h2>Thêm sản phẩm mới</h2>
+        <form method="POST">
+            <input type="text" name="product_name" placeholder="Tên sản phẩm" required><br>
+            <input type="number" step="0.01" name="product_price" placeholder="Giá sản phẩm" required><br>
+            <input type="number" name="category_id" placeholder="Mã loại sản phẩm" required><br>
+            <button type="submit">Thêm sản phẩm</button>
+        </form>
+    </div>
+</body>
+</html>
